@@ -1,0 +1,160 @@
+export const propertyData = [
+    {
+        "id": 1,
+        "title": "3 BHK Apartment in Downtown",
+        "price": 450000,
+        "location": "New York, NY",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "size_sqft": 1500,
+        "amenities": [
+            "Gym",
+            "Swimming Pool",
+            "Parking"
+        ],
+        "image_url": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "2 BHK Condo with Sea View",
+        "price": 380000,
+        "location": "Miami, FL",
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "size_sqft": 1200,
+        "amenities": [
+            "Beach Access",
+            "Security",
+            "Balcony"
+        ],
+        "image_url": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Luxury Villa with Private Garden",
+        "price": 850000,
+        "location": "Los Angeles, CA",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "size_sqft": 2800,
+        "amenities": [
+            "Private Garden",
+            "Smart Home",
+            "Garage"
+        ],
+        "image_url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg"
+    },
+    {
+        "id": 4,
+        "title": "1 BHK Budget Apartment",
+        "price": 250000,
+        "location": "Austin, TX",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "size_sqft": 800,
+        "amenities": [
+            "Gym",
+            "Laundry",
+            "Security"
+        ],
+        "image_url": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"
+    },
+    {
+        "id": 5,
+        "title": "Penthouse with Skyline View",
+        "price": 1200000,
+        "location": "San Francisco, CA",
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "size_sqft": 3500,
+        "amenities": [
+            "Rooftop Terrace",
+            "Smart Security",
+            "Private Elevator"
+        ],
+        "image_url": "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg"
+    },
+    {
+        "id": 6,
+        "title": "Cozy Studio in Central Park",
+        "price": 300000,
+        "location": "New York, NY",
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "size_sqft": 600,
+        "amenities": [
+            "Park View",
+            "24/7 Concierge",
+            "Fitness Center"
+        ],
+        "image_url": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+    },
+    {
+        "id": 7,
+        "title": "Lakefront House with Dock",
+        "price": 750000,
+        "location": "Chicago, IL",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "size_sqft": 2000,
+        "amenities": [
+            "Private Dock",
+            "Boat Parking",
+            "BBQ Area"
+        ],
+        "image_url": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+    },
+    {
+        "id": 8,
+        "title": "Modern Townhouse with Backyard",
+        "price": 600000,
+        "location": "Dallas, TX",
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "size_sqft": 1800,
+        "amenities": [
+            "Backyard",
+            "Community Pool",
+            "Pet Friendly"
+        ],
+        "image_url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg"
+    },
+    {
+        "id": 9,
+        "title": "4 BHK Duplex with Home Office",
+        "price": 920000,
+        "location": "Seattle, WA",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "size_sqft": 2500,
+        "amenities": [
+            "Home Office",
+            "Solar Panels",
+            "Two-Car Garage"
+        ],
+        "image_url": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"
+    },
+    {
+        "id": 10,
+        "title": "Minimalist Smart Home",
+        "price": 700000,
+        "location": "Boston, MA",
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "size_sqft": 1900,
+        "amenities": [
+            "Minimalist Design",
+            "Smart Appliances",
+            "Energy Efficient"
+        ],
+        "image_url": "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg"
+    }
+];
+
+/**
+ * @returns {string[]} An array of sorted, unique location names.
+ */
+export function getUniqueLocations(data) {
+    const locations = data.map(p => p.location);
+    return [...new Set(locations)];
+}

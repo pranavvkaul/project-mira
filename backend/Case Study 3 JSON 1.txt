@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "3 BHK Apartment in Downtown",
+    "price": 450000,
+    "location": "New York, NY"
+  },
+  {
+    "id": 2,
+    "title": "2 BHK Condo with Sea View",
+    "price": 380000,
+    "location": "Miami, FL"
+  },
+  {
+    "id": 3,
+    "title": "Luxury Villa with Private Garden",
+    "price": 850000,
+    "location": "Los Angeles, CA"
+  },
+  {
+    "id": 4,
+    "title": "1 BHK Budget Apartment",
+    "price": 250000,
+    "location": "Austin, TX"
+  },
+  {
+    "id": 5,
+    "title": "Penthouse with Skyline View",
+    "price": 1200000,
+    "location": "San Francisco, CA"
+  },
+  {
+    "id": 6,
+    "title": "Cozy Studio in Central Park",
+    "price": 300000,
+    "location": "New York, NY"
+  },
+  {
+    "id": 7,
+    "title": "Lakefront House with Dock",
+    "price": 750000,
+    "location": "Chicago, IL"
+  },
+  {
+    "id": 8,
+    "title": "Modern Townhouse with Backyard",
+    "price": 600000,
+    "location": "Dallas, TX"
+  },
+  {
+    "id": 9,
+    "title": "4 BHK Duplex with Home Office",
+    "price": 920000,
+    "location": "Seattle, WA"
+  },
+  {
+    "id": 10,
+    "title": "Minimalist Smart Home",
+    "price": 700000,
+    "location": "Boston, MA"
+  }
+]

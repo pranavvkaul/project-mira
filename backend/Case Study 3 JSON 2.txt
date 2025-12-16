@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "size_sqft": 1500,
+    "amenities": ["Gym", "Swimming Pool", "Parking"]
+  },
+  {
+    "id": 2,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "size_sqft": 1200,
+    "amenities": ["Beach Access", "Security", "Balcony"]
+  },
+  {
+    "id": 3,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "size_sqft": 2800,
+    "amenities": ["Private Garden", "Smart Home", "Garage"]
+  },
+  {
+    "id": 4,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "size_sqft": 800,
+    "amenities": ["Gym", "Laundry", "Security"]
+  },
+  {
+    "id": 5,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "size_sqft": 3500,
+    "amenities": ["Rooftop Terrace", "Smart Security", "Private Elevator"]
+  },
+  {
+    "id": 6,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "size_sqft": 600,
+    "amenities": ["Park View", "24/7 Concierge", "Fitness Center"]
+  },
+  {
+    "id": 7,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "size_sqft": 2000,
+    "amenities": ["Private Dock", "Boat Parking", "BBQ Area"]
+  },
+  {
+    "id": 8,
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "size_sqft": 1800,
+    "amenities": ["Backyard", "Community Pool", "Pet Friendly"]
+  },
+  {
+    "id": 9,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "size_sqft": 2500,
+    "amenities": ["Home Office", "Solar Panels", "Two-Car Garage"]
+  },
+  {
+    "id": 10,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "size_sqft": 1900,
+    "amenities": ["Minimalist Design", "Smart Appliances", "Energy Efficient"]
+  }
+]

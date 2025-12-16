@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image_url": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+  },
+  {
+    "id": 2,
+    "image_url": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+  },
+  {
+    "id": 3,
+    "image_url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg"
+  },
+  {
+    "id": 4,
+    "image_url": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"
+  },
+  {
+    "id": 5,
+    "image_url": "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg"
+  },
+  {
+    "id": 6,
+    "image_url": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+  },
+  {
+    "id": 7,
+    "image_url": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+  },
+  {
+    "id": 8,
+    "image_url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg"
+  },
+  {
+    "id": 9,
+    "image_url": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"
+  },
+  {
+    "id": 10,
+    "image_url": "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg"
+  }
+]
