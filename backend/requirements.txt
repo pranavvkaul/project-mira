@@ -1,3 +1,6 @@
 fastapi
 uvicorn
 google-generativeai
+pandas
+pydantic
+scikit-learn
