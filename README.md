@@ -178,6 +178,8 @@ The predicted price is returned as a numeric value and displayed alongside the l
 2. Select two different properties
 3. Click the compare button
 4. View predicted price and feature comparison
+   
+---
 
 ### AI Assistant
 
