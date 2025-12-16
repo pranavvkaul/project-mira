@@ -202,4 +202,3 @@ The predicted price is returned as a numeric value and displayed alongside the l
 
 This project was developed as a technical case study for Agent Mira.
 
-```
