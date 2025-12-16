@@ -1,12 +1,5 @@
 # project-mira
 
-Below is a **clean, professional, emoji free `README.md`** you can directly use.
-It is structured for **case study evaluation, portfolio review, and technical clarity**, while clearly separating core requirements and bonus AI work.
-
-You can copy this exactly into `README.md`.
-
----
-
 ````markdown
 # Agent Mira: Property Comparison and Price Prediction App
 
@@ -212,9 +205,4 @@ This project was developed as a technical case study for Agent Mira.
 ```
 
 ---
-
-If you want, I can also:
-- Tailor this README to a college assignment rubric
-- Shorten it for a GitHub portfolio
-- Rewrite it in a more academic or more startup style
 ```
