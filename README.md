@@ -1,6 +1,5 @@
 # project-mira
 
-````markdown
 # Agent Mira: Property Comparison and Price Prediction App
 
 ## Overview
