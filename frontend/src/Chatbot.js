@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
+// --- Gemini System Instructions
 const SYSTEM_INSTRUCTIONS = `
 You are a friendly, domain specific real estate assistant for a property comparison application.
 
@@ -31,6 +32,7 @@ STYLE GUIDELINES:
 If a question cannot be answered using the provided data, respond by saying you do not have enough information to answer it.
 `;
 
+// --- API Configuration ---
 const genAI = new GoogleGenerativeAI(
   process.env.REACT_APP_GEMINI_API_KEY
 );
@@ -38,6 +40,8 @@ const genAI = new GoogleGenerativeAI(
 const model = genAI.getGenerativeModel({
   model: "gemini-2.5-flash"
 });
+
+// --- Chatbot Component ---
 
 const Chatbot = ({ prop1, prop2 }) => {
   const [open, setOpen] = useState(false);
@@ -47,10 +51,15 @@ const Chatbot = ({ prop1, prop2 }) => {
       text: "Hi! Ask me anything about the compared properties."
     }
   ]);
+  // State for the user's current input text and thinking.
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
+  //Constructs the property data context that is injected into the prompt.
+  // This is currently using hardcoded mock data for demonstration. 
+
   const buildContext = () => {
+    // If props are missing, instruct the AI that there is no data.
     if (!prop1 || !prop2) {
       return "No properties selected yet.";
     }
@@ -155,7 +164,7 @@ Amenities: Minimalist Design, Smart Appliances, Energy Efficient
 If you do not have enough data, say so.
 `;
   };
-
+// Handles sending the user's message to the Gemini API.
   const handleSend = async () => {
     if (!input.trim()) return;
 
@@ -170,16 +179,8 @@ If you do not have enough data, say so.
     setLoading(true);
 
     try {
-      const prompt = `
-${SYSTEM_INSTRUCTIONS}
-
-Context:
-${buildContext()}
-
-User question:
-${userMessage}
-`;
-
+      const prompt = `${SYSTEM_INSTRUCTIONS} Context: ${buildContext()} User question: ${userMessage}`;
+      // Call the Gemini API to generate content based on the structured prompt
       const result = await model.generateContent(prompt);
       const response = result.response.text();
 
