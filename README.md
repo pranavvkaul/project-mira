@@ -187,16 +187,6 @@ The predicted price is returned as a numeric value and displayed alongside the l
 
 ---
 
-## Future Enhancements
-
-* Replace mock data with a relational database
-* Add real time property data ingestion
-* Integrate map based visualization
-* Add user authentication and saved comparisons
-* Improve ML model accuracy with real market data
-
----
-
 ## License
 
 This project was developed as a technical case study for Agent Mira.
