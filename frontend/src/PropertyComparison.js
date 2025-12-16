@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { propertyData, getUniqueLocations } from "./data";
 import Chatbot from "./Chatbot";
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://127.0.0.1:8000";
 // --- Data Transformation Function ---
 const buildLocationOptions = (data) => {
     // Used to count properties in the same city to create unique labels/values.
@@ -145,7 +146,7 @@ const PropertyCard = ({ property, label }) => {
         }
 
         try {
-            const res = await fetch("http://127.0.0.1:8000/compare", {
+                const res = await fetch(`${BACKEND_URL}/compare`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
