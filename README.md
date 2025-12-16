@@ -22,15 +22,16 @@ As an advanced enhancement, the project also includes an AI powered conversation
 - Integrates a pre trained Scikit Learn regression model
 - Backend API accepts structured property data and returns a predicted price
 - Graceful error handling for invalid or missing feature inputs
+ 
+### 🤖 Context Aware AI Assistant (Bonus)
 
-### Context Aware AI Assistant (Bonus)
-- Powered by Google Gemini API
-- Understands the currently selected properties
-- Answers comparative and analytical questions using natural language
-- Example queries:
-  - Which property is better for a family
-  - Compare price per square foot
-  - Which home offers better amenities
+- **Powered by Google Gemini API:** Utilizes the free tier of Google's Generative AI (`gemini-2.5-flash`) for cost-effective, high-speed inference.
+- **Strict Context Injection:** The chatbot operates with strict system instructions, meaning it *only* answers based on the injected JSON data of the currently selected properties. It does not "hallucinate" outside facts.
+- **Natural Language Analysis:** Capable of understanding complex, comparative questions about the property data.
+- **Example Queries:**
+  - *"How many properties are there?"*
+  - *"Which property has a better price per square foot?"*
+  - *"Give me the location of properties with number of beds less than 5."*
 
 ---
 
