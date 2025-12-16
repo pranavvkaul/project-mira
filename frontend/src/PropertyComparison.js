@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { propertyData, getUniqueLocations } from "./data";
 import Chatbot from "./Chatbot";
 
+// --- Data Transformation Function ---
 const buildLocationOptions = (data) => {
+    // Used to count properties in the same city to create unique labels/values.
     const countMap = {};
-
+    // Increment count for the current location if same location exists.
     return data.map((property) => {
         const baseLocation = property.location;
 
@@ -25,6 +27,8 @@ const buildLocationOptions = (data) => {
 };
 
 const locationOptions = buildLocationOptions(propertyData);
+
+// --- PropertyCard Sub-Component ---
 
 const PropertyCard = ({ property, label }) => {
     if (!property) {
@@ -118,8 +122,8 @@ const PropertyCard = ({ property, label }) => {
         </div>
     );
 };
-
-const PropertyComparison = () => {
+    // --- PropertyComparison Main Component ---
+    const PropertyComparison = () => {
     const [location1, setLocation1] = useState(null);
     const [location2, setLocation2] = useState(null);
 
@@ -127,6 +131,8 @@ const PropertyComparison = () => {
         prop1: null,
         prop2: null,
     });
+
+    // Handles the 'Compare' button click: sends data to the FastAPI backend for ML price prediction and updates the component state with results.
 
     const handleCompare = async () => {
         if (
@@ -167,12 +173,14 @@ const PropertyComparison = () => {
                 });
             }
         } catch (err) {
+            // Handle network errors or server failures
             console.warn(
                 "Backend compare failed, falling back to local data",
                 err
             );
         }
     };
+    // --- Main Render Section ---
 
     return (
         <div className="min-h-screen">
