@@ -1,5 +1,3 @@
-# project-mira
-
 # Agent Mira: Property Comparison and Price Prediction App
 
 ## Overview
@@ -8,6 +6,8 @@ Agent Mira is a full stack web application built as a technical case study.
 The application enables users to compare real estate properties side by side and predict property prices using a machine learning model based on structured property features.
 
 As an advanced enhancement, the project also includes an AI powered conversational assistant that understands the context of the selected properties and answers comparison related questions using natural language.
+
+Link to the demo video: https://drive.google.com/file/d/1QgRnatD7a7qWfFObTUb2Afsubcbz_rcH/view?usp=sharing
 
 ---
 
